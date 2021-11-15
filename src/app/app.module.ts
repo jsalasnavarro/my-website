@@ -5,24 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderBarComponent } from './header/header-bar/header-bar.component';
 import { MaterialModule } from './shared/modules/material/material.module';
-
-import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button'
+import { SideNavComponent } from './side-nav/side-nav.component';
 
 // ngmodule TS annotation to mark class def as an angular module
 @NgModule({
   // declarations mark out which components and directives can be used in app
   declarations: [
     AppComponent,
-    HeaderBarComponent
+    HeaderBarComponent,
+    SideNavComponent
   ],
   // importing other modules to provide functionality to app
   imports: [
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
-    MatIconModule,
-    MatButtonModule
   ],
   providers: [],
   // entry point component for starting app
